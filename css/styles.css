@@ -13,30 +13,32 @@
   --focus-color: #434455;
   --light-text-color: #e7e9fc;
   --background-color: #f4f4fd;
-  --fiter-btn-color: #f4f4fd;
+  --filter-btn-color: #f4f4fd;
+  --main-backgroud-color: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-color);
-}
-
-ul {
-  list-style: none;
-  text-decoration: none;
+  background-color: var(--main-backgroud-color);
 }
 
 /* header */
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .logo {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .logo-web {
@@ -48,7 +50,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
+
   color: var(--primary-color);
 }
 
@@ -63,12 +65,17 @@ ul {
 
 .auth-nav {
   color: var(--text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
+
+.auth-nav:hover,
+.auth-nav:focus {
+  color: var(--active-color);
+}
+
+/* main */
 
 /* hero */
 
@@ -84,24 +91,13 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
 }
-/* /* .hero-btn {
-  font-style: normal;
+
+.hero-btn {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.18;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em; */
-
-/* [type='button'] {
-  color: #ffffff;
-  background-color: yellow
-  cursor: pointer;
-} */
-
-/* main */
-
-.hero-btn {
+  letter-spacing: 0.04em;
   color: #ffffff;
   background: var(--active-color);
   cursor: pointer;
@@ -109,10 +105,6 @@ ul {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--active-color);
-}
-
-.filter-btn:active {
   background-color: #404bbf;
 }
 
@@ -128,21 +120,22 @@ ul {
 .section-item {
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
+
+  color: var(--primary-color);
 }
 
 .section-desc {
   color: var(--text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-/* .our-team {
+.our-team {
   background-color: var(--background-color);
-} */
+}
 
 /* footer */
 
@@ -155,7 +148,6 @@ footer .logo {
 }
 .footer-dscr {
   color: var(--light-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -165,15 +157,20 @@ footer .logo {
 
 .filter-btn {
   color: var(--active-color);
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.04em;
-  background-color: var(--fiter-btn-color);
+  background-color: var(--filter-btn-color);
   cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   color: #ffffff;
   background-color: var(--active-color);
+}
+
+.filter-btn:active {
+  background-color: #404bbf;
 }
