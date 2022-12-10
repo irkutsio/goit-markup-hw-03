@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="page-header">
       <nav>
         <a class="logo link" href="./index.html"> <span class="logo-web">WEB</span>STUDIO</a>
         <ul class="site-nav list">
-          <li><a class="nav-item link" href="/">Studio</a></li>
-          <li><a class="nav-item link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="nav-item link" href="/">Contacts</a></li>
+          <li class="nav-item"><a class="link" href="/">Studio</a></li>
+          <li class="nav-item"><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="link" href="/">Contacts</a></li>
         </ul>
       </nav>
       <ul class="auth-nav list">
@@ -32,118 +36,150 @@
     <main>
       <section>
         <h1 hidden>Our Projects</h1>
-        <ul class="list">
-          <li><button class="filter-btn" type="button">All</button></li>
-          <li><button class="filter-btn" type="button">Web Site</button></li>
-          <li><button class="filter-btn" type="button">App</button></li>
-          <li><button class="filter-btn" type="button">Design</button></li>
-          <li><button class="filter-btn" type="button">Marketing</button></li>
+        <ul class="list prodjects-nav">
+          <li class="prodjects-item"><button class="filter-btn" type="button">All</button></li>
+          <li class="prodjects-item"><button class="filter-btn" type="button">Web Site</button></li>
+          <li class="prodjects-item"><button class="filter-btn" type="button">App</button></li>
+          <li class="prodjects-item"><button class="filter-btn" type="button">Design</button></li>
+          <li class="prodjects-item">
+            <button class="filter-btn" type="button">Marketing</button>
+          </li>
         </ul>
-
-        <ul class="list">
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/project-card-1.jpg"
-                width="360"
-                height="300"
-                alt="Banking App
+        <div class="container">
+          <ul class="list prodjects-list">
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-1.jpg"
+                  width="360"
+                  height="300"
+                  alt="Banking App
               Interface"
-              />
-              <h2 class="section-item">Banking App Interface Concept</h2>
-              <p class="section-desc">App</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/project-card-2.jpg"
-                width="360"
-                height="300"
-                alt="Cashless
+                />
+                
+             <div class="project-descr">
+                <h2 class="section-item">Banking App Interface Concept</h2>
+                <p class="section-desc">App</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-2.jpg"
+                  width="360"
+                  height="300"
+                  alt="Cashless
               Payment"
-              />
-              <h2 class="section-item">Cashless Payment</h2>
-              <p class="section-desc">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/project-card-3.jpg"
-                width="360"
-                height="300"
-                alt="Meditaion
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Cashless Payment</h2>
+                <p class="section-desc">Marketing</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-3.jpg"
+                  width="360"
+                  height="300"
+                  alt="Meditaion
               App"
-              />
-              <h2 class="section-item">Meditaion App</h2>
-              <p class="section-desc">App</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/project-card-4.jpg"
-                width="360"
-                height="300"
-                alt="Taxi
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Meditaion App</h2>
+                <p class="section-desc">App</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-4.jpg"
+                  width="360"
+                  height="300"
+                  alt="Taxi
               Service"
-              />
-              <h2 class="section-item">Taxi Service</h2>
-              <p class="section-desc">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/project-card-5.jpg"
-                width="360"
-                height="300"
-                alt="Screen Illustrations"
-              />
-              <h2 class="section-item">Screen Illustrations</h2>
-              <p class="section-desc">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/project-card-6.jpg"
-                width="360"
-                height="300"
-                alt="Online Courses"
-              />
-              <h2 class="section-item">Online Courses</h2>
-              <p class="section-desc">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" class="" href=""
-              ><img
-                src="./images/project-card-7.jpg"
-                width="360"
-                height="300"
-                alt="Instagram Stories"
-              />
-              <h2 class="section-item">Instagram Stories Concept</h2>
-              <p class="section-desc">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/project-card-8.jpg" width="360" height="300" alt="Organic Food" />
-              <h2 class="section-item">Organic Food</h2>
-              <p class="section-desc">Web Site</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img src="./images/project-card-9.jpg" width="360" height="300" alt="Fresh Coffee" />
-              <h2 class="section-item">Fresh Coffee</h2>
-              <p class="section-desc">Web Site</p></a
-            >
-          </li>
-        </ul>
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Taxi Service</h2>
+                <p class="section-desc">Marketing</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-5.jpg"
+                  width="360"
+                  height="300"
+                  alt="Screen Illustrations"
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Screen Illustrations</h2>
+                <p class="section-desc">Design</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-6.jpg"
+                  width="360"
+                  height="300"
+                  alt="Online Courses"
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Online Courses</h2>
+                <p class="section-desc">Marketing</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" class="" href=""
+                ><img
+                  src="./images/project-card-7.jpg"
+                  width="360"
+                  height="300"
+                  alt="Instagram Stories"
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Instagram Stories Concept</h2>
+                <p class="section-desc">Design</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-8.jpg"
+                  width="360"
+                  height="300"
+                  alt="Organic Food"
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Organic Food</h2>
+                <p class="section-desc">Web Site</p></a
+              >
+              </div>
+            </li>
+            <li>
+              <a class="link" href=""
+                ><img
+                  src="./images/project-card-9.jpg"
+                  width="360"
+                  height="300"
+                  alt="Fresh Coffee"
+                />
+                <div class="project-descr">
+                <h2 class="section-item">Fresh Coffee</h2>
+                <p class="section-desc">Web Site</p></a
+              >
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
