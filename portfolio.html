@@ -20,23 +20,30 @@
   </head>
   <body>
     <header class="page-header">
-      <nav>
-        <a class="logo link" href="./index.html"> <span class="logo-web">WEB</span>STUDIO</a>
-        <ul class="site-nav list">
-          <li class="nav-item"><a class="link" href="/">Studio</a></li>
-          <li class="nav-item"><a class="link" href="./portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="link" href="/">Contacts</a></li>
+      <div class="container">
+        <div  class="header-nav">
+        <nav>
+          <div  class="header-nav">
+          <a class="logo link" href="./index.html"> <span class="logo-web">WEB</span>STUDIO</a>
+          <ul class="site-nav list">
+           
+            <li class="nav-list"><a class="nav-item link" href="#">Studio</a></li>
+            <li class="nav-list"><a class="nav-item link  current" href="./portfolio.html">Portfolio</a></li>
+            <li class="nav-list"><a class="nav-item link" href="#">Contacts</a></li>
+            
+          </ul>
+        </nav>
+        <ul class="auth-nav list link">
+          <li class="auth-list"><a class="auth-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="auth-list"><a class="auth-nav link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
-      </nav>
-      <ul class="auth-nav list">
-        <li><a class="auth-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="auth-nav link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-      </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
+      <div class="container">
         <h1 hidden>Our Projects</h1>
-        <ul class="list prodjects-nav">
+        <ul class="list projects-nav">
           <li class="prodjects-item"><button class="filter-btn" type="button">All</button></li>
           <li class="prodjects-item"><button class="filter-btn" type="button">Web Site</button></li>
           <li class="prodjects-item"><button class="filter-btn" type="button">App</button></li>
@@ -45,6 +52,8 @@
             <button class="filter-btn" type="button">Marketing</button>
           </li>
         </ul>
+        </div>
+        <section class="prodjects">
         <div class="container">
           <ul class="list prodjects-list">
             <li>
@@ -182,13 +191,15 @@
         </div>
       </section>
     </main>
-    <footer>
-      <a class="logo link" href="./index.html"> <span class="logo-web">WEB</span>STUDIO</a>
-      <p class="footer-dscr">
-        Increase the flow of customers and <br />
-        sales for your business with digital <br />
-        marketing & growth solutions.
-      </p>
+   <footer class="">
+      <div class="container">
+        <a class="logo link" href="./index.html"> <span class="logo-web">WEB</span>STUDIO</a>
+        <p class="footer-dscr">
+          Increase the flow of customers and <br />
+          sales for your business with digital <br />
+          marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
