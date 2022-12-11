@@ -34,8 +34,6 @@ body {
   margin: 0;
 }
 
-/* header */
-
 .list {
   list-style: none;
   margin-top: 0;
@@ -66,13 +64,17 @@ img {
 
 header {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -87,17 +89,15 @@ header {
   margin-right: 77px;
 }
 
+.logo-web,
 .logo:active {
-  color: var(--active-color);
-}
-
-.logo-web {
   color: var(--active-color);
 }
 
 .site-nav {
   display: flex;
 }
+
 .link.current {
   color: #9747ff;
 }
@@ -107,6 +107,8 @@ header {
 }
 
 .nav-item {
+  display: block;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
@@ -138,8 +140,8 @@ header {
   margin-left: auto;
 }
 
-.auth-list:not(:last-child) {
-  margin-right: 40px;
+.auth-list + .auth-list {
+  margin-left: 40px;
 }
 
 .auth-nav:hover,
@@ -232,11 +234,9 @@ section {
 
   margin-left: auto;
   margin-right: auto;
+
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: solid green;
- */
 }
 
 .section-desc {
@@ -263,9 +263,10 @@ section {
   margin-right: 24px;
 }
 
+/* what are we doing */
+
 .activities {
   display: flex;
-
   padding-top: 0;
 }
 
@@ -308,10 +309,6 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* .our-team-title {
-  margin-top: 227px;
-} */
-
 /* footer */
 
 footer {
@@ -341,12 +338,13 @@ footer .logo {
 
 .filter-btn {
   color: var(--active-color);
+  background-color: var(--filter-btn-color);
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.04em;
-  background-color: var(--filter-btn-color);
+
   cursor: pointer;
 
   padding: 8px 16px;
